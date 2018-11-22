@@ -91,7 +91,8 @@ public class TodoListFragment extends Fragment {
                     Toast.LENGTH_SHORT)
                     .show();
 
-            Intent intent = TodoActivity.newIntent(getActivity(), mTodo.getId());
+            // Intent intent = TodoActivity.newIntent(getActivity(), mTodo.getId());
+            Intent intent = TodoPagerActivity.newIntent(getActivity(), mTodo.getId());
             startActivity(intent);
 
         }
